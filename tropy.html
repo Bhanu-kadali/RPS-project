@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Won</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="winning">
+        <div class="trophy">
+            <div class="trophySVG">
+               <img src="Vector (1).png" alt="Tropy">
+            </div>
+            <div class="stars">
+                <img src="./Star.png" alt="" class="star1">
+                <img src="./Star.png" alt="" class="star2">
+                <img src="./Star.png" alt="" class="star3">
+                <img src="./Star.png" alt="" class="star4">
+                <img src="./Star.png" alt="" class="star5">
+                <img src="./Star.png" alt="" class="star6">
+                <img src="./Star.png" alt="" class="star7">
+                <img src="./Star.png" alt="" class="star8">
+            </div>
+        </div>
+        <h1 class="winningTitle">
+            HURRAY!! 
+        </h1>
+        <h2 class="info">YOU WON THE GAME<h2>
+            <div class="choiceResult" id="choiceResultDetails">
+                <button onclick="playagain()"><a href="./index.html">Play Again</a></button>
+            </div>
+        
+    </div>
+        
+    <div class="buttonSection">
+        <div class="button ripple" id="ruleButton" onclick="closeRules()">
+            Rules
+        </div>
+        
+    </div>
+
+
+    <div id="gameRule">
+        <h1>Game Rule</h1>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>
+                Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+                Use rock, paper, scissors to settle minor decisions or simply play to
+                pass the time
+            </li>
+            <li>
+                If both players lay down the same hand, each player lays down another
+                hand
+            </li>
+        </ul>
+        <div id="closeRules" onclick="closeRules()">X</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
